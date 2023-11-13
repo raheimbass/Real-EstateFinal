@@ -1,0 +1,149 @@
+*{
+font-family: 'Montserrat', sans-serif;
+font-family: 'Playpen Sans', cursive;   
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+p{
+    line-height: 2;
+}
+img{
+    width: 45%;
+}
+/* utilities */
+.container{
+    width: 80%;
+    margin: 10px auto;
+}
+/* desktop view  */
+
+
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+/* mobile view  */
+
+@media(max-width:768px){
+    .flex-container{
+        flex-direction: column;
+    }
+}
+.description{
+    font-size:1.5rem; /*1rem= 16px */
+}
+@media(max-width:768px){
+    .description{
+        display: none;
+    }
+}
+.button{
+    background-color: orange;
+    padding: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 3px;
+    margin: 10px auto;
+    display: block;
+    width: 100%;
+}
+.icon-images{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+    margin: 40px auto;
+    
+}
+/* header */
+.site-header{
+    background-image: url(../images/img/header.jpg);
+    height: 500px;
+    text-align: center;
+    
+}
+.site-header h1{
+    color: white;
+    display: flex;
+}  
+.site-header p{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+}
+.site-header a{
+    margin-right: 20px;
+}
+/* about us */
+
+.about-us-main{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* houses */
+
+.houses-item{
+    background-color: #d4d4d4;
+    /* width: 100px; */
+    margin: 10px;
+    border-radius: 10px;
+}
+.houses-item-text{
+   padding: 10px 50px;
+}
+fieldset{
+    padding: 10px;
+}
+label{
+    display: block;
+}
+input, textarea{
+    display: block;
+    width: 95%;
+    background-color: grey;
+    border: none;
+    padding: 2px;
+    border-radius: 2px;
+}
+.contact-button{
+    background-color: green;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    margin: 10px auto;
+    width: 50px;
+    display: inline-block;
+}
+/* footer */
+.site-footer{
+    background-image: url(../images/img/encuentra.jpg);
+    background-position: bottom bottom;
+    background-size: cover;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+.footer-p{
+    font-size: 30px;
+    font-weight: 300;
+}

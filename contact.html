@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;1,200&family=Playpen+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/mystyles.css">
+    <title>Contact</title>
+</head>
+<body>
+    <header class="site-header">
+        <div class="flex-container">
+            <h1>Real Estate</h1>
+            <nav>
+                <a href="about.html">About us</a>
+                <a href="blog.html">Blog</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+    <main class="container">
+        <h2>Contact</h2>
+        <p>Fill the next information</p>
+
+        <fieldset>
+            <legend>Personal information</legend>
+            <div>
+                <label>Name</label>
+                <input type="text" placeholder="Type your name">
+            </div>
+            <div>
+                <label>Email</label>
+                <input type="email" placeholder="Type your email">
+            </div>
+            <div>
+                <label>Phone number</label>
+                <input type="tel" placeholder="Type your cellphone number">
+            </div>
+            <div>
+                <label>Message</label>
+                <textarea cols="30" rows="10"></textarea> 
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Product Information</legend>
+            <div>
+                <label>Type</label>
+                <select name="property-types" id="property-types">
+                    <option value="USA">United States</option>
+                    <option value="CAN">Canada</option>
+                    <option value="MEX">Mexico</option>
+                    <option value="BRAZ">Brazil</option>
+                    <option value="COL">Columbia</option>
+                </select>
+            </div>
+            <div>
+                <label>Number</label>
+                <input type="tel">
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Contact information</legend>
+                 <div class="flex-container">
+                    <label for="Name">Name</label>
+                    <input type="checkbox">
+                    <label for="Email">Email</label>
+                    <input type="checkbox">
+                </div>
+                <h6>If you want to be contacted by phone, please select a day and hour:</h6>
+                <div>
+                    <label>Date</label>
+                    <input type="date">
+                </div>  
+                <div>
+                    <label>Hour</label>
+                    <input type="time">
+                </div>
+        </fieldset>
+        <div class>
+       <a class="contact-button" href="#">Send</a>
+        </div>
+        
+
+    </main>
+</body>
+</html>
